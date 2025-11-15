@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background: #fff;
+    color: #333;
+    padding: 40px 0;
+}
+
+.products {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.products h1.heading {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+}
+
+.products h1 span {
+    font-weight: 800;
+    color: #000;
+}
+
+.products h2.subheading {
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+
+    /* margin-bottom: 30px; */
+}
+
+.products h2.ellipsis {
+    white-space: nowrap; /* Không xuống dòng */
+    overflow: hidden; /* Ẩn phần vượt quá chiều rộng */
+    text-overflow: ellipsis; /* Thêm dấu ... */
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 25px;
+    justify-content: center;
+}
+
+.product-card {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: all 0.2s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-card p {
+    font-size: 14px;
+    color: #444;
+    line-height: 1.6;
+    margin: 15px 0;
+    /* text-transform: capitalize; */
+}
+
+.product-card p::first-letter {
+    text-transform: uppercase;
+}
+
+/* Nút Detail */
+.detail-btn,
+.detail-span {
+    display: inline-block;
+    background-color: #f26a63;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 18px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.detail-btn:hover {
+    background-color: #d85b55;
+    transform: scale(1.05);
+}
+
+.detail-span {
+    margin-top: 15px;
+}
+.detail-span:hover {
+    background: #d85b55;
+}
+
+//loader scss
+// @import url(./loader.scss);
+@use "./loader.scss";
+@use "./modal.scss";

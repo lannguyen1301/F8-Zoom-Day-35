@@ -1,0 +1,141 @@
+// @use "./loading.scss";
+
+:root {
+    --radius: 16px;
+    --shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+//
+
+.inner {
+    margin: 0;
+    display: grid;
+    place-items: center;
+    // background: linear-gradient(135deg, #74ebd5 0%, #acb6e5 100%);
+    font-family:
+        ui-sans-serif,
+        system-ui,
+        -apple-system,
+        "Segoe UI",
+        Roboto,
+        "Helvetica Neue",
+        Arial;
+    color: #fff;
+}
+
+.wrapper {
+    width: min(92vw, 650px);
+    padding: 24px;
+    border-radius: var(--radius);
+    background: linear-gradient(135deg, #74ebd5 0%, #acb6e5 100%);
+    backdrop-filter: blur(10px);
+    box-shadow: var(--shadow);
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.title {
+    margin: 0 0 16px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.controls {
+    display: grid;
+    gap: 8px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.label {
+    font-size: 1.6rem;
+    opacity: 0.9;
+}
+
+.select {
+    appearance: none;
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    background: rgba(255, 255, 255, 0.2);
+    color: #6b6b6b;
+    font-weight: bold;
+    outline: none;
+    transition:
+        border-color 0.2s ease,
+        background 0.2s ease;
+}
+
+.select:focus {
+    border-color: #fff;
+    background: rgba(255, 255, 255, 0.28);
+}
+
+.weather {
+    display: grid;
+    gap: 6px;
+    align-items: center;
+    justify-items: center;
+    padding: 16px 0 6px;
+}
+
+.temp {
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 1;
+    text-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+}
+
+.condition {
+    font-size: 1.6rem;
+    opacity: 0.95;
+}
+
+.meta {
+    margin-top: 12px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.pill {
+    padding: 10px 20px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.18);
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    font-size: 1.6rem;
+}
+
+.hint {
+    margin-top: 10px;
+    font-size: 1.6rem;
+    opacity: 0.9;
+    text-align-last: left;
+}
+
+.refreshBtn {
+    margin-top: 12px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s ease;
+    width: 100%;
+}
+
+.refreshBtn:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive tinh chỉnh nhỏ */
+@media (max-width: 380px) {
+    .temp {
+        font-size: 2.6rem;
+    }
+}

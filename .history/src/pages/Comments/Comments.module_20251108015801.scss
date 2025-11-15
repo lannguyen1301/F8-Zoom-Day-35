@@ -1,0 +1,44 @@
+.commentWrapper {
+    width: 650px;
+    background: #fff;
+    border-radius: 16px;
+    padding: 32px;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.05);
+    margin-top: 40px;
+}
+
+// Comment card
+.commentCard {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    background: #f9fafb;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 14px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+}
+
+.commentCard:hover {
+    transform: translateY(-2px);
+}
+
+// comments content
+.commentContent {
+    flex: 1;
+}
+
+.commentHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+}
+
+// Text
+.text {
+    color: #475569;
+    font-size: 15px;
+    line-height: 1.5;
+}

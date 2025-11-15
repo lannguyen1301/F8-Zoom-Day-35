@@ -1,0 +1,31 @@
+// Component Avatar
+function ImgComp({ name, className = "avatar-img" }) {
+    const [imgError, setImgError] = React.useState(false);
+
+    if (imgError) {
+        const words = name.trim().split(" ");
+        const initials =
+            words.length === 1
+                ? words[0][0].toUpperCase()
+                : `${words[0][0].toUpperCase()}${words[
+                      words.length - 1
+                  ][0].toUpperCase()}`;
+        return <div className="avatar-fallback">{initials}</div>;
+    }
+
+    return (
+        <img
+            src={`https://ui-avatars.com/api/?name=${encodeURIComponent(
+                name
+            )}&background=random`}
+            alt={name}
+            className={className}
+            onError={() => setImgError(true)}
+        />
+    );
+}
+
+// Component Comment Loader
+function LoaderComp({ className, children }) {
+    return <div className={className}>{children}</div>;
+}

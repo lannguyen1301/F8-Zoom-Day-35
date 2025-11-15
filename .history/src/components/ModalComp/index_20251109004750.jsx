@@ -1,0 +1,49 @@
+import PropTypes from "prop-types";
+import clsx from "clsx";
+import styles from "./ModalComp.module.scss";
+
+// Component Modal
+function ModalComp({
+    className,
+    title,
+    id,
+    body,
+    post,
+    onClick,
+    onClose,
+    onBackdropClick,
+}) {
+    if (!post) return null;
+    // tránh crash nếu không có post
+    return (
+        <div id="modal" className={clsx(styles.modalBackdrop, styles.show)}>
+            <div
+                className={styles.modalContainer}
+                onClick={(e) => e.stopPropagation()}
+            >
+                <button
+                    id="modalClose"
+                    className={styles.modalClose}
+                    onClick={onClose}
+                >
+                    &times;
+                </button>
+                <div className={styles.modalContent}>
+                    <h2>{post.title}</h2>
+                    <p>{post.body}</p>
+                </div>
+            </div>
+        </div>
+    );
+}
+
+ModalComp.propTypes = {
+    className: PropTypes.string,
+    title: PropTypes.string.isRequired,
+    id: PropTypes.string,
+    body: PropTypes.string.isRequired,
+    onClick: PropTypes.func,
+    onClose: PropTypes.func,
+    onBackdropClick: PropTypes.func,
+};
+export default ModalComp;

@@ -1,0 +1,239 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    body {
+        font-family:
+            system-ui,
+            -apple-system,
+            BlinkMacSystemFont,
+            "Segoe UI",
+            Roboto,
+            "Helvetica Neue",
+            Arial,
+            sans-serif;
+    }
+}
+
+.wrapper {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    background: #f7f3ea;
+    width: 390px;
+    /* height: 844px; */
+    height: auto;
+    margin: 0 auto;
+    border-radius: 36px;
+    /* overflow-y: scroll; */
+}
+
+.inner {
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    padding: 50px 32px;
+}
+
+.header {
+    /*  */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 18px;
+    border-bottom: 1px solid #9d9d9d;
+}
+
+.heading {
+    /*  */
+    font-size: 4.2rem;
+    font-family: roboto;
+    font-weight: bold;
+}
+
+.heading__span {
+    color: #8de0c8;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formtask {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.todotask {
+    outline: none;
+    height: 44px;
+    line-height: 44;
+    border: 1px solid #000;
+    border-radius: 21px;
+    padding: 0 25px;
+    width: 268px;
+}
+
+.todotask__btn {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: none;
+    background: #000;
+    color: #fff;
+    font-size: 3.1rem;
+    font-weight: 200;
+    text-align: center;
+}
+
+.statisticsgroup {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 18px;
+}
+
+.creategroup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.creategroup__title {
+    font-size: 1.2rem;
+    font-weight: bolder;
+    font-family: "inter", sans-serif;
+    color: #000;
+}
+
+.creategroup__span {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: #d9d9d9;
+    color: #000;
+    font-size: 1.2rem;
+    font-family: "inter", sans-serif;
+    text-align: center;
+    display: block;
+    line-height: 26px;
+}
+
+.main {
+    /*  */
+}
+
+.inittasks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 70px;
+}
+
+.inittasksnone {
+    display: none;
+}
+
+.inittasks__img {
+    display: block;
+    width: 56px;
+    height: 56px;
+}
+
+.inittasks__desc {
+    font-size: 1.4rem;
+    line-height: 1.96rem;
+    font-family: "roboto", sans-serif;
+    font-weight: 300;
+}
+
+.taskgroup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.taskgroupnone {
+    display: none;
+}
+
+.taskgroup__list {
+    margin-top: 25px;
+}
+
+.taskgroup__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000;
+    border-radius: 12px;
+    padding: 16px 12px;
+    gap: 8px;
+}
+
+.taskgroup__item:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.taskgroup__item.unchecked {
+    background: #b6dbe3;
+}
+
+.taskgroup__item.checked {
+    background: #f5d1d4;
+    text-decoration: line-through;
+}
+
+.taskgroup__desc {
+    font-size: 1.4rem;
+    font-family: "inter", sans-serif;
+    line-height: 1.96rem;
+    text-align: justify;
+}
+
+/* button delete */
+.btntrash {
+    border: unset;
+    background: unset;
+}
+
+/* custom check box */
+/* Ẩn checkbox mặc định */
+.checkbox__task {
+    display: none;
+}
+
+/* Tạo hình tròn thay thế */
+.checkbox__task + .taskgroup__desc::before {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 2px solid #000;
+    margin-right: 10px;
+    vertical-align: middle;
+    background-color: #fff;
+    transition: all 0.2s ease;
+}
+
+/* Khi checkbox được check */
+.checkbox__task:checked + .taskgroup__desc::before {
+    background-color: #003efa;
+    box-shadow: inset 0 0 0 4px #fff;
+}

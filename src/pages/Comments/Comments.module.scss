@@ -1,0 +1,105 @@
+.inputName,
+.inputEmail {
+    width: 100%;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 12px 16px;
+    font-size: 15px;
+    margin-bottom: 12px;
+    transition: border-color 0.3s ease;
+}
+
+.inputName:focus,
+.InputTextArea:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.InputTextArea {
+    resize: none;
+    min-height: 100px;
+}
+
+.commentWrapper {
+    width: 650px;
+    background: #fff;
+    border-radius: 16px;
+    padding: 32px;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.05);
+    // margin-top: 40px;
+    margin: 0 auto;
+}
+
+.commentList {
+    margin-top: 30px;
+}
+
+// Comment card
+.commentCard {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    background: #f9fafb;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 14px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+}
+
+.commentCard:hover {
+    transform: translateY(-2px);
+}
+
+// comments content
+.commentContent {
+    flex: 1;
+}
+
+.commentHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+}
+
+.commentHeader h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #0f172a;
+    margin: 0;
+}
+
+.commentHeader span {
+    color: #94a3b8;
+    font-size: 13px;
+}
+
+// Text
+.text {
+    color: #475569;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+//
+.btn {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #1d4ed8;
+}
+
+.bgUiImg {
+    display: block;
+    border-radius: 999px;
+}
