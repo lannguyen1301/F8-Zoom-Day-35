@@ -1,0 +1,20 @@
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #60a5fa, #3b82f6);
+    color: #fff;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.avatarImg {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}

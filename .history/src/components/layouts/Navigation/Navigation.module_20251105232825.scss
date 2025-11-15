@@ -1,0 +1,18 @@
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+Nav ul.list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.active {
+    color: red;
+    font-size: inherit;
+    font-weight: 600;
+}

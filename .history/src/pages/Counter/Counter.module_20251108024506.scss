@@ -1,0 +1,84 @@
+.main {
+    text-align: center;
+    background-color: #fff;
+    padding: 40px 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    width: 500px;
+}
+
+h1,
+.heading {
+    margin-bottom: 30px;
+    font-size: 64px;
+    color: #333;
+}
+
+.counterDisplay {
+    font-size: 64px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #c9c9c9c9;
+}
+
+.buttonGroup {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.circleBtn {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 32px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+}
+
+.minus {
+    background-color: #e74c3c;
+}
+
+.minusValue {
+    color: #e74c3c;
+}
+
+.plus {
+    background-color: #2ecc71;
+}
+.plusValue {
+    color: #2ecc71;
+}
+
+.resetBtn {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.resetValue {
+    color: #3498db;
+}
+
+.circleBtn,
+.resetBtn {
+    transition: all 0.25s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.circleBtn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.resetBtn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
