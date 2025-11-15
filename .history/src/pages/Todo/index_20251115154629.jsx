@@ -142,7 +142,7 @@ function Todo() {
                             <DescComp className={styles.initTasks}>
                                 <ImgComp
                                     className={styles.initTasksImg}
-                                    src="/img/Clipboard.png"
+                                    src={Clipboard}
                                     alt="TaskImageNone"
                                 />
                                 <ParaComp className={styles.initTasksDesc}>

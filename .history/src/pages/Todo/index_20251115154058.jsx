@@ -12,7 +12,7 @@ import UlistComp from "../../components/UlistComp";
 import LabelComp from "../../components/LabelComp";
 import ImgComp from "../../components/ImgComp";
 
-// import Clipboard from "public/img/Clipboard.png";
+import Clipboard from "public/img/Clipboard.png";
 
 // Styles
 import styles from "./Todo.module.scss";
@@ -142,7 +142,7 @@ function Todo() {
                             <DescComp className={styles.initTasks}>
                                 <ImgComp
                                     className={styles.initTasksImg}
-                                    src="/img/Clipboard.png"
+                                    src=".../../../"
                                     alt="TaskImageNone"
                                 />
                                 <ParaComp className={styles.initTasksDesc}>

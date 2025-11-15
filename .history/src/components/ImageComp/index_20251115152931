@@ -1,0 +1,10 @@
+import PropTypes from "prop-types";
+
+function ImageComp({}) {
+    return;
+}
+
+ImageComp.propTypes = {
+    src: PropTypes.string.isRequired,
+};
+export default ImageComp;
