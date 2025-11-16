@@ -21,7 +21,7 @@ import PropTypes from "prop-types";
 import clsx from "clsx";
 import styles from "./ButtonComp.module.scss";
 
-function ButtonComp({
+function Button({
     primary = false,
     rounded = false,
     bordered = false,
@@ -81,4 +81,4 @@ ButtonComp.propTypes = {
     className: PropTypes.string,
 };
 
-export default ButtonComp;
+export default Button;

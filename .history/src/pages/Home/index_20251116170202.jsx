@@ -7,7 +7,7 @@ function Home() {
     return (
         <>
             <DescComp className={styles.buttonGroup}>
-                <DescComp className={styles.buttonInner}>
+                <DescComp className={styles.}>
                     <ButtonComp
                         title="ButtonComp Normal"
                         // className="wrapper"

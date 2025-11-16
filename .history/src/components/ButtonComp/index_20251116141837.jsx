@@ -81,4 +81,4 @@ ButtonComp.propTypes = {
     className: PropTypes.string,
 };
 
-export default ButtonComp;
+export default Button;

@@ -13,11 +13,6 @@
     transition: all 0.15s ease;
     text-decoration: none;
 
-    &:hover {
-        background-color: #0041c2;
-        border-color: rgba(0, 0, 0, 0.1);
-    }
-
     &:active {
         background-color: #e5e7eb;
         transform: scale(0.98);
@@ -41,24 +36,4 @@
             background-color: #eff6ff;
         }
     }
-}
-
-.primary {
-    color: #ffffff;
-    background: #500075;
-}
-
-.primary:hover {
-    color: #ffffff;
-}
-
-.rounded {
-    color: #ffffff;
-    // background: #500075;
-    border-radius: 999px;
-}
-
-.bordered {
-    color: #500075;
-    border-color: #500075;
 }

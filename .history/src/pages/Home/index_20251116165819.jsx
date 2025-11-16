@@ -1,13 +1,13 @@
 import ButtonComp from "../../components/ButtonComp";
 import DescComp from "../../components/DescComp";
-import styles from "./Home.module.scss";
+// import styles from "./Home.module.scss";
 // import styles from '../../components'
 
 function Home() {
     return (
         <>
-            <DescComp className={styles.buttonGroup}>
-                <DescComp className={styles.buttonInner}>
+            <DescComp className={styles.wrapper}>
+                <DescComp className={styles.inner}>
                     <ButtonComp
                         title="ButtonComp Normal"
                         // className="wrapper"

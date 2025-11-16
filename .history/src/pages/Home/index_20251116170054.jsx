@@ -6,8 +6,8 @@ import styles from "./Home.module.scss";
 function Home() {
     return (
         <>
-            <DescComp className={styles.buttonGroup}>
-                <DescComp className={styles.buttonInner}>
+            <DescComp>
+                <DescComp>
                     <ButtonComp
                         title="ButtonComp Normal"
                         // className="wrapper"
