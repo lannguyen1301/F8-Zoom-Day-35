@@ -38,8 +38,7 @@ function Products() {
         }
     }, []);
     if (loading) {
-        // return <DescComp className={styles.loader}></DescComp>;
-        return <LoaderComp />;
+        return <DescComp className={styles.loader}></DescComp>;
     }
 
     const handleOpenModal = (post) => () => {
